@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>So Sánh</title>
+  <style>
+    body{
+      width: 80%;
+      padding: 15px;
+      margin: 0 auto;
+      border: 1px solid rgb(170, 148, 148);
+      box-shadow: 2px 3px 7px rgb(66, 80, 110);
+      font-size: 18px;
+
+    }
+    header h1{
+      text-align: center;
+      color: rgb(1, 67, 143);
+    }
+    div.box {
+      margin: 20px;
+    }
+    div.box h2 {
+      margin-top: 50px;
+    }
+    div.box h2:before {
+      content: ""
+    }
+    div.box p {
+      color:rgb(78, 76, 76);
+    }
+    div.box p#vidu1,  a#vidu1{
+      color: rgb(147, 238, 245);
+      background-color: black;
+      padding: 15px;
+    }
+    div.box p#vidu2, a#vidu2{
+      color: rgb(202, 40, 0);
+      background-color: rgb(185, 192, 194);
+      padding: 15px;
+    }
+    footer{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(110, 3, 182);
+    border: 1px solid rgb(110, 3, 182);
+    border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>So Sánh Các Kiểu Thẻ</h1>
+  </header>
+  <main>
+    <div class="box">
+    
+    <h2>Tag None: Khối thẻ none không hiển thị nội dung bên trong</h2>
+    <p>đơn giản chỉ là nếu nội dung được đặt trong những kiểu thẻ này sẽ không thể hiển thị ra bên ngoài, người dùng không thể thấy được trên thân trình duyệt
+      trừ phi có những tác động của đối tượng xử lý được gọi bên trong các thẻ này.
+    </p>
+    <p>
+      ví dụ: 
+    </p>
+  </div>
+
+  <div class="box">
+    <h2>Khối này hiển thị nội dung bên trong và chiều ngang tràn hết trình duyệt</h2>
+    <p>Khối thẻ này khi được khai báo sử dụng thì sẽ tràn hết 100% từ trái sang phải của trình duyệt, và đẩy 
+      các thẻ cùng hàng xuống, kiểu thẻ này không thích chia sẻ cho các thẻ khác nằng chung một hàng,
+      mặt dù hàng còn tróng rất nhiều
+    </p>
+    <p>
+      ví dụ: ta khai báo 2 phần nội dung sau <q>nội dung 1</q>, <q>nội dung 2</q>
+    </p>
+    <p id="vidu1"><q>nội dung 1</q> trong thẻ p thứ 1</p>
+    <p id="vidu2"><q>nội dung 2</q> trong thẻ p thứ 2</p>
+    <p>có thể thấy nó đã xuống hàng và chiếm toàn bộ mặt dù nội dung chưa chạm bên phải trình duyệt</p>
+
+  </div>
+
+  <div class="box">
+    <h2>Khối này hiển thị nội dung bên trong và chiều ngang tùy thuộc độ dài của các đối tượng bên trong khối. Và nó sẽ nằm trên một dòng</h2>
+    <p>Khối lệnh này khi được khai báo sử dụng không tràn hết trình duyệt, mà chỉ
+      dừng lại ở cuối của nội dung bên trong
+    </p>
+    <p>
+      ví dụ: ta khai báo 2 phần nội dung sau <q>nội dung 1</q>, <q>nội dung 2</q>
+    </p>
+    <p>ta sẽ dùng thẻ a để đặt nội dung của phần ví dụ bên trong</p>
+    <p><a id="vidu1" href="#noidung1">phần nội dung 1</a> <a id="vidu2" href="#noidung2">phần nội dung 2</a></p>
+    <p>
+      rõ ràng ta thấy 2 thẻ nằm cùng trên 1 hàng và chúng không tham lam đẩy lẫn nhau để chiếm phần
+      hàng nó đứng.
+    </p>
+  </div>
+  </main>
+
+  <footer>
+    <p>Copyright &copy; <a href="https://www.facebook.com/nhatcungtom" target="_blank">Lê Anh Vũ</a></p>
+    <!-- <p class="_hr"><a href="">next ></a></p> -->
+  </footer>
+</body>
+</html>
