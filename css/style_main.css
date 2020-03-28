@@ -43,10 +43,10 @@ a {
 a:hover{
   color: rgb(74, 145, 192);
 }
-footer ._hr {
+/* footer ._hr {
   border-top: 1px solid rgb(137, 178, 231);
   border-radius: 10px;
-}
+} */
 footer{
   width: 80%;
   margin: 0 auto;

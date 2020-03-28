@@ -4,8 +4,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Page</title>
+  <style>
+    *{
+      padding: 0px;
+      margin: 0px;
+    }
+    body {
+      font-size: 1.4em;
+      min-width: 450px;
+    }
+    header {
+      color: rgb(23, 160, 170);
+      
+    }
+    header h1{
+      font-size: 2em;
+      font-family: cursive;
+      cursor: pointer;
+      text-align: center;
+    }
+    header nav {
+      background-color: white;
+      width: 100%;
+    }
+    header nav ul li {
+      width: 120px;
+      float: left;
+      padding: 15px;
+      background-color: white;
+      text-align: center;
+      list-style-type: none;
+    }
+    header nav a{
+      text-decoration: none;
+      color: rgb(196, 7, 123);
+    }
+    header:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    main {
+      /* padding: 17px; */
+      margin-top: 30px;
+    }
+    main section#intro{
+      border-radius: 17px;
+      box-shadow: -1px 1px 10px rgb(109, 105, 105);
+      padding: 10px;
+      font-family: arial;
+      min-width: 506px;
+      max-width: 507px;
+    }
+    section#intro h2 {
+      padding-bottom: 30px;
+    }
+    section#intro p {
+      line-height: 1.3em;
+      padding: 8px;
+    }
+    footer{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(110, 3, 182);
+    border: 1px solid rgb(110, 3, 182);
+    border-radius: 15px;
+    }
+    a {
+  text-decoration: none;
+  color: rgb(70, 199, 199);
+    }
+    a:hover {
+      color: rgb(74, 145, 192);
+    }
+  </style>
 </head>
 <body>
-  <a href="page/basictaghtml.html">Click to page html basic</a>
+  <header>
+    <h1>LÊ ANH VŨ</h1>
+    <br>
+    <hr />
+    <br>
+    <nav>
+      <ul>
+        <li><a href="page/basictaghtml.html">HTML basic</a></li>
+        <li><a href="#newlink">newlink</a></li>
+        <li><a href="#newlink">newlink</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="intro">
+      <h2>Xin chào !</h2>
+      <p>Mình là Lê Anh Vũ, đây là trang web của mình.</p>
+      <p>Trang web này được viết ra để mọi  
+        có thể tham khảo những chia sẻ và kinh nghiệm trong học lập trình.
+      </p>
+      <p>Mong các bạn đón nhận</p>
+    </section>
+  </main>
+  <footer>
+    <p><a href="https://www.facebook.com/nhatcungtom" target="_blank">Lê Anh Vũ</a></p>
+  </footer>
 </body>
 </html>
