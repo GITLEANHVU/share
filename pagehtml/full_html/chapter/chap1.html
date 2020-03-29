@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chương 1: Căn bản</title>
+  <style>
+    body {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      background-color:rgb(189, 182, 182);
+    }
+    body > header h1{
+      padding: 17px;
+      text-align: center;
+      color: black;
+      border: 1px solid rgb(199, 222, 223);
+    }
+    body > header h1 {
+      color: rgb(241, 247, 239);
+      text-shadow: 1px 1px 2px rgb(107, 46, 46);
+    }
+    section#menu-list{
+      width: 90%;
+      /* margin: 0px 0px 17px 50px; */
+      margin: 0 auto;
+      border: 1px solid black;
+    }
+    section#menu-list h1{
+      color: red;
+      margin-left: 17px;
+    }
+    section#menu-list ol li {
+      margin-left: 17px;
+      line-height: 23px;
+      font-size: 18px;
+    }
+    section#menu-list p {
+      margin-left: 17px;
+      line-height: 23px;
+      font-size: 18px;
+    }
+    section#content {
+      width: 90%;
+      margin: 0 auto;
+    }
+    section#content article {
+      border: 2px double black;
+      margin-top: 17px;
+      background-color:rgb(225, 247, 217);
+    }
+    section#content article h1{
+      text-align: center;
+      
+    }
+    section#content article p{
+      padding: 10px;
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Chapter 1: Căn Bản</h1>
+  </header>
+  <main>
+    <section id="menu-list">
+      <h1>Bài này ta học những gì ?</h1>
+      <ol>
+        <li>WWW là gì ?</li>
+        <li>Web page là gì ?</li>
+        <li>Web site là gì ?</li>
+        <li>Domain name</li>
+        <li>DNS ?</li>
+        <li>Server ?</li>
+        <li>Client ?</li>
+        <li>Trang web động ?</li>
+        <li>Trang web tĩnh ?</li>
+        <li>HTML là gì vì sao ta học ?</li>
+      </ol>
+      <p>Các bạn đã biết những <u>thuật ngữ</u> đó ? Chưa ?</p>
+      <p>Hôm nay mình cùng các bạn tìm hiểu những khái niệm cơ bản nhé.</p>
+    </section>
+    <section id="content">
+      <!--  -->
+      <article>
+        <header>
+          <h1>1. WWW là gì ?</h1>
+        </header>
+        <p>
+          <strong>World Wide Web</strong> gọi tắt là <strong>Web</strong> hoặc <strong>WWW</strong>,
+          mản lưới toàn cầu là một không gian thông tin toàn cầu mà mọi người có thể truy cập (đọc và viết)
+          thông tin qua các thiết bị kết nối với mạng internet <a href="https://vi.wikipedia.org/wiki/World_Wide_Web">...</a>
+        </p>
+        <footer>
+          <p><a href="https://vi.wikipedia.org/wiki/World_Wide_Web">Đọc thêm.</a></p>
+        </footer>
+      </article>
+      <!--  -->
+      <article>
+        <header>
+          <h1>2. Web page là gì ?</h1>
+        </header>
+        <p>
+          <strong>Web page</strong> là một tài liệu (thương là HTML) được thiết kế để
+          phân phối trên môi trường web.
+        </p>
+      </article>
+      <!--  -->
+      <article>
+        <header>
+          <h1>3. Web site là gì ?</h1>
+        </header>
+        <p>
+          <strong>Web site</strong> là tập hợp các web page có liên quan
+          đến 1 công ty hay có nhân
+        </p>
+      </article>
+      <!--  -->
+      <article>
+        <header>
+          <h1>4. Domain name ?</h1>
+        </header>
+
+        <p>
+          <strong>Domain name</strong> là tên xác định web site <br />
+          VD: www.leanhvuwebpage.com
+        </p>
+      </article>
+      <!--  -->
+      <article>
+        <header>
+          <h1>5. DNS ?</h1>
+        </header>
+
+        <p>
+          <strong>DNS</strong> (Domain  name service): một chương trình chạy trên server,
+          chuyển tên miền sang IP và ngược lại
+        </p>
+      </article>
+            <!--  -->
+      <article>
+        <header>
+          <h1>6. Server ?</h1>
+        </header>
+
+        <p>
+          <strong>Server</strong> chưa dữ liệu, tài nguyên và dịch vụ cho phép máy 
+          khác có thể khai thác và truy cập.
+        </p>
+          <ul>
+            <li>Một máy chủ có thể dùng cho một hay nhiều mục đích.</li>
+            <li>Tên máy chủ thường đuộc gắn với mục đính sử dụng
+              <ul>
+                <li>VD: Web server, File server, Mail server ...</li>
+              </ul>
+            </li>
+
+          </ul>
+        <footer>
+          <p></p>
+        </footer>
+      </article>
+          <!--  -->
+          <article>
+            <header>
+              <h1>7. Client ?</h1>
+            </header>
+    
+            <p>
+              <strong>Client</strong> là máy tính dùng để kết nối và khai thác các 
+              tài nguyên trên máy tính chủ
+              <ul>
+                <li>Việc kết nối client với server và việc khai thác dịch vu của server tạo nên mô 
+                  hình Client/Server
+                </li>
+                <li>Một máy tính vừa có thể là serfrver vừa là client.</li>
+              </ul>
+            </p>
+    
+            <footer>
+              <p></p>
+            </footer>
+          </article>
+          <!--  -->
+          <article>
+            <header>
+              <h1>8. Trang web tĩnh ?</h1>
+            </header>
+    
+            <p>
+              <strong>Trang web tĩnh</strong> chứa nội dung cố định (thường là HTML 
+              để cập nhật nội dung phải cập nhật trực tiếp trên HTML).
+            </p>
+            <p>
+              Không cho phép sử dụng tương tác, cập nhập dữ liệu trên trang web.
+            </p>
+            <p>
+              Một trang web chứa các hình ảnh chuyển động cũng có thể là trang web tĩnh!
+            </p>
+            <footer>
+              <p></p>
+            </footer>
+          </article>
+                <!--  -->
+      <article>
+        <header>
+          <h1>9. Trang web động ?</h1>
+        </header>
+
+        <p>
+          Kết hợp HTML và mã lệnh.
+        </p>
+        <p>Mã được thực thi trực tiếp trên server, gửi kết quả là HTML về người dùng.</p>
+        <p>Có khả năng tương tác với người sử dụng!</p>
+        <footer>
+          <p></p>
+        </footer>
+      </article>
+      <!--  -->
+      <article>
+      <header>
+        <h1>10. HTML là gì vì sao ta học ?</h1>
+      </header>
+      <p>
+        <strong>HTML</strong> : HyperText Markup Language - ngôn ngữ đánh dấu siêu văn bản.
+      </p>
+      <p>Do <strong>Tim Berner-Lee </strong> phát minh và trở thành ngôn ngữ chuẩn để tạo trang web.</p>
+      <p>
+        HTML dùng các thẻ (tags) để định dạng dữ liệu 
+      </p>
+      <p>Tạo khung/bản cho trang web.</p>
+      <footer>
+        <p></p>
+      </footer>
+    </article>
+      <!-- end section -->
+    </section>
+  </main>
+</body>
+</html>
