@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>chapter 2: TEXT</title>
+  <link rel="stylesheet" href="css_chapter/style_chapter.css">
 </head>
 <body>
-  <header>
+  <header id="header-top">
     <h1>Chapter 2: Text</h1>
   </header>
   <main>
-    <section>
       <!-- article 1 -->
       <article>
         <header>
@@ -25,7 +25,7 @@
             </p>
           </div>
 
-          <div class="heading">
+          <div class="heading box">
             <p><strong>Heading</strong>: phần mở đầu</p>
             <p>Thẻ heading chứa nội dung quang trọng và tóm gọn cho bài viết, <br />
             ta có thể hiển rằng heading là một tiêu đề cho một bài viết và nó phân theo cấp bậc <br />
@@ -36,31 +36,31 @@
             <img src="images_chapter2/heading.png" alt="heading_one_to_six" width="50%" height="350px">
           </div>
 
-          <div class="paragraphs">
+          <div class="paragraphs box">
             <p><strong>Paragraphs: </strong> đoạn văn.</p>
             <p>Thẻ <b>p</b> sẽ chứa một đoạn văn.</p>
             <p>Mỗi đoạn sẽ được xuống dòng sau khi cuối đoạn văn có thẻ đóng</p>
           </div>
 
-          <div class="bold_italic">
+          <div class="bold_italic box">
             <p><strong>Bold &amp; italic</strong>: <b>im đậm</b> và <i>in nghiêng</i></p>
             <p>Thẻ <b>Bold</b>(<b>b</b>) <b>in đậm </b> thường được sử dụng cho các <b>từ khóa</b></p>
             <p>Thẻ <i>Italic</i> (<i>i</i>) <i>in nghiêng</i> thường được sử dụng cho các  từ chỉ là <i>tên, kỹ thuật, từ ngữ, suy nghĩ,...</i></p>
           </div>
 
-          <div class="subperscript_supscript">
+          <div class="subperscript_supscript box">
             <p><strong>Superscript &amp; Subscript: </strong></p>
             <p>Thẻ superscript (<b>sup</b>) thường được dùng cho hậu tố của ngày tháng, hoặc trong toán học <b>VD:</b> 6<sup>th</sup>, 10<sup>x</sup>, ...</p>
             <p>Thẻ subscript(<b>sub</b>) thường được dùng chú thích hoặc ký tự hóa học <b>VD:</b> H<sub>2</sub>O ...</p>
           </div>
 
-          <div class="br_hr">
+          <div class="br_hr box">
             <p><strong>Line breaks &amp; Horizontal rules:</strong></p>
             <p>Thẻ <b>br</b>: ngắt dòng</p>
             <p>Thẻ <b>hr</b> tạo đường kẻ ngang, khi bạn muốn thay đôi chủ đề hãy dùng thẻ này</p>
           </div>
 
-          <div class="white_space">
+          <div class="white_space box">
             <p><strong>White space: </strong> nếu trình duyệt duyệt qua đoạn văn và thấy hơn hai spaces, thì nó chỉ hiện một,
             <br /> và cũng thế nếu khi code ta break trình duyệt sẽ tự động tạo một space cho chúng ta</p>
           </div>
@@ -78,20 +78,61 @@
         <header>
           <h1>Semantic markup</h1>
           <p>Phần này sẽ bao gồm các yếu tố, thành phần để mô tả phần ngữ nghĩa cho văn bản.</p>
+          <p>Một số yếu tố của phần này không nhằm mục đích ảnh hưởng đến cấu trúc trang web nhưng chúng thêm thông tin bổ sung
+            <br /> cho trang web, chúng được gọi là đánh dấu ngữ nghĩa.
+          </p>
         </header>
   
         <div class="content">
-          <p style="text-align: center; color: red; font-size: 19px;">Đang bận chưa cập nhập thêm, sẽ sớm có thêm nội dung ....  :) </p>
+
+          <div class="strong_em box">
+            <p><strong>Strong &amp; Emphasis: </strong></p>
+            <p>Thẻ strong là thẻ chủ yếu để chỉ ra nội dung quan trọng chính trong đoạn văn</p>
+            <p><b>VD:</b> <strong>Cảnh báo: </strong>khu vực này có nhiều tên móc túi.</p>
+            <p>Thẻ emphasis (<em>em</em>) chỉ ra ẩn ý, để nhấn mạnh ý nghĩa thực sự của câu. </p>
+          </div>
+
+          <div class="quotations box">
+            <p><strong>Quotations </strong>: những thẻ <strong>trích dẫn</strong></p>
+            <p>Thẻ blockquote (<b>blockquote</b>) dùng để trích dẫn toàn bộ đoạn văn dài, và có cho thẻ p bên trong,
+            <br /> nó sẽ tự thụt lề nhưng không nên dùng nó cho việc thụt lề văn bản.
+            </p>
+            <p>Thẻ <b>q</b> dùng để trích dẫn đoạn ngắn nằm trong 1 đoạnv ăn chính, mặt định sẽ hiển thị ngoặc kép bao nội dung,
+            <br/> bên trong, nhưng ít người dùng nó,</p>
+            <p>Cả 2 thẻ trên đề có thể dùng thuộc tính cite="" để chỉ ra nới trích dẫn.</p>
+          </div>
+
+          <div class="abbreviations_acronyms box">
+            <p><strong>Abbreviations(<b>abbr</b>) &amp; Acronyms(<b>acronym</b>): chữ viết tắt và các từ viết tắt.</strong></p>
+            <p>Cả 2 thẻ dùng thuộc tính title ="" để chỉ ra từ hoặc các từ viết tắt. </p>
+            <p><b>VD: </b> <br />Từ <b>prof</b> = <b>professor</b>, các từ <b>NASA</b> = <b>National Aeronautics and Space Administration</b>.
+            </p>
+          </div>
+          <div class="citations_definitions box">
+            <p><strong>Citations</strong> &amp; <strong>Definitions: </strong>Trích dẫn &amp; định  nghĩa.</p>
+            <p>Thẻ <strong>cite</strong> được sử dụng để trích dẫn cho các nguồn tài liệu tham khảo.</p>
+            <p>Thẻ <strong>Dfn</strong> được dùng để chỉ ra trường hợp xác định thuật ngữ mới, một số trình duyệt sẽ hiển thị in nghiêng.</p>
+          </div>
+
+          <div class="author-details box">
+            <p>Thẻ <strong>address</strong> để chứa chi tiết liên lạc của tác giả trang web</p>
+          </div>
+          <div class="changes_content box">
+            <p>Thẻ <strong>del</strong> gạch ngang từ hiểu là xóa đi.</p>
+            <p>Thẻ <strong>ins</strong> chèn vào sau khi xóa đi.</p>
+            <p>Thẻ <strong>s</strong> chỉ ra một cái gì đó không chính xác hoặc có liên quan (nhưng không nên xóa nó).</p>
+          </div>
         </div>
   
         <footer>
-  
+          <p>Trên là phần đánh dấu ngữ nghĩa cho văn bản.</p>
         </footer>
       </article>
-    </section>
   </main>
   <footer>
-
+    <address>
+      <p>Liên lạc với tôi qua facebook <a href="https://www.facebook.com/nhatcungtom">LEANHVU</a></p>
+    </address>
   </footer>
 </body>
 </html>
